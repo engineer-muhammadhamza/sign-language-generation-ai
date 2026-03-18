@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Deaf Hub</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="landing-container">
+        <h1>Deaf Hub</h1>
+        <p class="subheading">Right to Talk</p>
+        <div class="options">
+            <a href="{{ url_for('speak') }}" class="option-button">Speak</a>
+            <a href="{{ url_for('type') }}" class="option-button">Type</a>
+        </div>
+    </div>
+</body>
+</html>

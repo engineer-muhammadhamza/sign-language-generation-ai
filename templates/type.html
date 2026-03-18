@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Deaf Hub - Type</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Type a Word</h1>
+        <input type="text" id="input-word" placeholder="Enter word">
+        <button onclick="submitTypedWord()">Submit</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        async function submitTypedWord() {
+            const word = document.getElementById('input-word').value;
+            const response = await fetch('/predict', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ word: word })
+            });
+
+            const data = await response.json();
+            displayResult(data);
+        }
+
+        function displayResult(data) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `
+                <h2>Typed Word: ${data.typed_word}</h2>
+                <h2>Corrected Word: ${data.corrected_word}</h2>
+            `;
+            if (data.image) {
+                resultDiv.innerHTML += `<img src="data:image/jpeg;base64,${data.image}" alt="${data.corrected_word}" />`;
+            } else {
+                resultDiv.innerHTML += `<p>No image found for: ${data.corrected_word}</p>`;
+            }
+        }
+    </script>
+</body>
+</html>
