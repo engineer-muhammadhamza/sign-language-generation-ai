@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("https://img.freepik.com/free-photo/abstract-digital-grid-black-background_53876-97647.jpg?size=626&ext=jpg&ga=GA1.1.672697106.1717459200&semt=ais_user");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Landing Container */
+.landing-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+.landing-container h1 {
+    color: #007bff;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subheading {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+}
+
+.option-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option-button:hover {
+    background-color: #0056b3;
+}
+
+/* Container */
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Header */
+.container h1 {
+    color: #007bff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Input Field */
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Button */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Result Section */
+#result {
+    margin-top: 20px;
+}
+
+#result h2 {
+    color: #28a745; /* Change this to the desired color */
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#result img {
+    margin-top: 20px;
+    max-width: 100%;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 10px;
+}
+   
