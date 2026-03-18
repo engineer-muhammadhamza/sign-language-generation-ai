@@ -1,6 +1,7 @@
 # sign-language-generation-ai
 
-🚀 Sign Language Generation for Visual Aid of Special Person
+Sign Language Generation for Visual Aid of Special Person
+
 Developed an intelligent sign language generation system that converts spoken or typed input into visual sign representations using NLP and deep learning models (TF-IDF, Logistic Regression, RNN-LSTM), integrated into a user-friendly Flask web application.
 
 📌 Features
